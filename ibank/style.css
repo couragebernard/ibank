@@ -48,6 +48,33 @@ body {
     height: 15px;
     width: auto;
 }
+.sign-buttons {
+    margin-top: 20px;
+}
+#home-sign-up{
+    border-radius: 15px;
+    border: none;
+    height: 32px;
+    width: 70px;
+    background: #A4EBF3;
+    color: white;
+    cursor: pointer;
+}
+#home-sign-in{
+    border-radius: 15px;
+    border: none;
+    height: 32px;
+    width: 70px;
+    background: rgba(102, 0, 255, 0.651);
+    color: white;
+    cursor: pointer;
+}
+.home-signin-link,
+.home-signup-link {
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+}
 .home-non-header {
     display: flex;
     flex-direction: column;
