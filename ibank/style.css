@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+}
+.phone-container {
+    border: 2px solid black;
+    width: 257px;
+    height: 509px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 3px 3px 5px 2px gray;
+}
+
+.header {
+    padding: 0 10px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+#time {
+    font-size: 10px;
+    margin-top: 5px;
+}
+.blank-part {
+    background: black;
+    height: 25px;
+    width: 130px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.icons {
+    height: 15px;
+    width: auto;
+    padding: 3px;
+}
+.single-icon {
+    height: 15px;
+    width: auto;
+}
+.home-non-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 479px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.logo {
+    font-weight: 800;
+    font-size: 30px;
+}
+.signup-non-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 479px;
+    background: rgb(253, 250, 239);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#username,
+#email,
+#password {
+    border: 0.1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    height: 35px;
+    margin-top: 10px;
+    width: 210px;
+    background: #f3f3f3;
+    padding-left: 5px;
+}
+#username::placeholder,
+#email::placeholder,
+#password::placeholder {
+    padding-left: 10px;
+    font-family: poppins;
+    font-size: 11px;
+}
+#username:focus,
+#email:focus,
+#password:focus {
+    border: 0.1px solid rgb(201, 201, 201);
+    outline: none;
+    padding-left: 5px;
+}
+
+.register-btn {
+    margin-top: 20px;
+    background: #A4EBF3;
+    width: 210px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+}
+.page-name {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+
+.signin-btn {
+    margin-top: 20px;
+    background: #A4EBF3;
+    width: 210px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+}
+.register-btn:focus,
+.signin-btn:focus{
+    outline: none;
+}
+.login-form {
+    justify-content:  center;
+}
+.error {
+    color:red;
+    font-size: 10px;
+    text-align: center;
+}
+
+/* Dashboard downwards */
+.phone-container2 {
+    padding-right: 10px;
+    border: 2px solid black;
+    width: 257px;
+    height: 509px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 3px 3px 5px 2px gray;
+}
+.header2 {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.header2.show {
+    filter: blur(0.8px);
+}
+#time2 {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.blank-part2 {
+    background: black;
+    height: 25px;
+    width: 130px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.icons2 {
+    height: 13px;
+    width: auto;
+    padding: 3px;
+}
+.single-icon2 {
+    height: 13px;
+    width: auto;
+}
+.dashboard-non-header {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    height: 479px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.dashboard-non-header.show {
+    filter: blur(0.8px);
+}
+.menu-avatar {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+#menu,
+#avatar {
+    cursor: pointer;
+}
+#dashboard-text {
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 10px;
+}
+#welcome-message {
+    font-size: 14px;
+    margin-left: 10px;
+}
+.card {
+    margin-top: 8px;
+    margin-left: 10px;
+    height: 140px;
+    width: 95%;
+    border-radius: 14px;
+    padding: 10px;
+    background: linear-gradient(108.25deg, rgba(255, 255, 255, 0) 2.68%, rgba(102, 0, 255, 0.3) 46.69%),
+linear-gradient(0deg, #A4EBF3, #A4EBF3);
+}
+.card.show {
+    filter: blur(5px);
+}
+#ibank-logo {
+    right: 0;
+    color: white;
+    text-align: right;
+    font-weight: 300;
+}
+#shiny-part {
+    background: orange;
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+.card-number {
+    display: flex;
+    justify-content: space-between;
+}
+.card-numbers {
+    color: white;
+}
+.name-expiry {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#card-name {
+    font-size: 12px;
+    color: white;
+}
+#expiry-date {
+    font-size: 12px;
+    color: white;
+}
+footer {
+    position:absolute;
+    width:100%;
+    bottom:0px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px;
+}
+.footer-element {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    /*border-radius: 50%; */
+    position: relative;
+    /*box-shadow: 1px 3px 7px 1px gray; */
+}
+.footer-icon {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.payment-history {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.payment-history.show {
+    filter: blur(3px);
+}
+.day {
+    font-weight: 600;
+    color: gray;
+    font-size: 13px;
+}
+.today-contents {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-image-container {
+    height: 33px;
+    width: 33px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0.5px gray;
+    position: relative;
+    
+    cursor: pointer;
+}
+.content-image {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.payment-name {
+    font-weight: bold;
+    font-size: 11px;
+}
+#payment-description {
+    color: gray;
+    font-size: 9px;
+    font-weight: 300;
+}
+.payment-price {
+    color: red;
+    font-size: 11px;
+}
+.today-contents-inner {
+    display: flex;
+    background: #c4c4c433;
+    border-radius: 10px;
+    align-items: center;
+    width: 185px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+}
+.today-contents-inner2 {
+    line-height: 15px;
+}
+
+/* sidebar */
+.sidebar {
+    height: 420px;
+    width: 90%;
+    background: #A4EBF3;
+    display: none;
+    position: absolute;
+    top:40px;
+    z-index: 30;
+    padding: 10px 8px;
+}
+.sidebar.show {
+    display: block;
+    transition: all 2.6s ease;
+}
+
+.back-settings {
+    display: flex;
+    justify-content: space-between;
+}
+#sidebar-dashboard-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+#sidebar-welcome-message {
+    font-size: 14px;
+}
+.sidebar-icon-container {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    background: orange;
+    border-radius: 50%;
+}
+#sidebar-icon {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.sidebar-icon-name {
+    font-weight: 500;
+    font-size: 12px;
+}
+.sidebar-single-option {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    cursor: pointer;
+}
+.sidebar-icon-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+#back-settings,
+#back-icon {
+    cursor: pointer;
+}
+.sidebar-list-options {
+    margin-top: 10px;
+    display: grid;
+}
+.sidebar-single-list-options {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid black;
+    cursor: pointer;
+}
+.sidebar-single-list-options-text {
+    font-weight: 500;
+    font-size: 12px;
+}
